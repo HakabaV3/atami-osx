@@ -13,7 +13,6 @@
 		933243C11D0C1B8E00EB84DC /* EntityEnpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933243C01D0C1B8E00EB84DC /* EntityEnpty.swift */; };
 		933243C51D0C288E00EB84DC /* NSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933243C41D0C288E00EB84DC /* NSImageView.swift */; };
 		9360DC4C1D0C0EFD0075C279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */; };
-		9360DC4E1D0C0EFD0075C279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC4D1D0C0EFD0075C279 /* ViewController.swift */; };
 		9360DC501D0C0EFD0075C279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9360DC4F1D0C0EFD0075C279 /* Assets.xcassets */; };
 		9360DC531D0C0EFD0075C279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9360DC511D0C0EFD0075C279 /* Main.storyboard */; };
 		9360DC5E1D0C0EFD0075C279 /* atami_osxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC5D1D0C0EFD0075C279 /* atami_osxTests.swift */; };
@@ -21,6 +20,8 @@
 		9360DC6B1D0C13940075C279 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC6A1D0C13940075C279 /* API.swift */; };
 		93EDF40C1D0C32CC004A3C8C /* ImageCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF40A1D0C32CC004A3C8C /* ImageCollectionItem.swift */; };
 		93EDF40D1D0C32CC004A3C8C /* ImageCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */; };
+		93EDF40F1D0C6826004A3C8C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF40E1D0C6826004A3C8C /* SearchViewController.swift */; };
+		93EDF4121D0C6850004A3C8C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF4101D0C6850004A3C8C /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		933243C41D0C288E00EB84DC /* NSImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImageView.swift; sourceTree = "<group>"; };
 		9360DC481D0C0EFD0075C279 /* atami-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "atami-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9360DC4D1D0C0EFD0075C279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9360DC4F1D0C0EFD0075C279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9360DC521D0C0EFD0075C279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9360DC541D0C0EFD0075C279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		9360DC6A1D0C13940075C279 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		93EDF40A1D0C32CC004A3C8C /* ImageCollectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionItem.swift; sourceTree = "<group>"; };
 		93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionItem.xib; sourceTree = "<group>"; };
+		93EDF40E1D0C6826004A3C8C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		93EDF4101D0C6850004A3C8C /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		BB8FB25140B73C11AFBD82AC /* Pods-atami-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osx.release.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osx/Pods-atami-osx.release.xcconfig"; sourceTree = "<group>"; };
 		C0BE08649EB555854A095630 /* Pods-atami-osxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osxTests/Pods-atami-osxTests.release.xcconfig"; sourceTree = "<group>"; };
 		CDE6A2509F24B5634647531D /* Pods_atami_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atami_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */,
-				9360DC4D1D0C0EFD0075C279 /* ViewController.swift */,
+				93EDF40E1D0C6826004A3C8C /* SearchViewController.swift */,
+				93EDF4101D0C6850004A3C8C /* AddViewController.swift */,
 				9360DC681D0C12980075C279 /* EntityImage.swift */,
 				933243C01D0C1B8E00EB84DC /* EntityEnpty.swift */,
 				9360DC6A1D0C13940075C279 /* API.swift */,
@@ -346,9 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9360DC4E1D0C0EFD0075C279 /* ViewController.swift in Sources */,
 				9360DC4C1D0C0EFD0075C279 /* AppDelegate.swift in Sources */,
 				93EDF40C1D0C32CC004A3C8C /* ImageCollectionItem.swift in Sources */,
+				93EDF4121D0C6850004A3C8C /* AddViewController.swift in Sources */,
+				93EDF40F1D0C6826004A3C8C /* SearchViewController.swift in Sources */,
 				9360DC6B1D0C13940075C279 /* API.swift in Sources */,
 				933243C51D0C288E00EB84DC /* NSImageView.swift in Sources */,
 				9360DC691D0C12980075C279 /* EntityImage.swift in Sources */,

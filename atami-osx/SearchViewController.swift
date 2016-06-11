@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  SearchViewController.swift
 //  atami-osx
 //
-//  Created by Jin Sasaki on 2016/06/11.
+//  Created by Jin Sasaki on 2016/06/12.
 //  Copyright © 2016年 Jin Sasaki. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 import AlamofireImage
 
-class ViewController: NSViewController {
+class SearchViewController: NSViewController {
 
     @IBOutlet weak var collectionView: NSCollectionView!
     @IBOutlet weak var keywordField: NSTextField!
@@ -56,12 +56,12 @@ class ViewController: NSViewController {
 
     override var representedObject: AnyObject? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 }
 
-extension ViewController: NSCollectionViewDataSource {
+extension SearchViewController: NSCollectionViewDataSource {
     func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.images.count
     }
@@ -76,7 +76,7 @@ extension ViewController: NSCollectionViewDataSource {
     }
 }
 
-extension ViewController: NSCollectionViewDelegate {
+extension SearchViewController: NSCollectionViewDelegate {
     func collectionView(collectionView: NSCollectionView, didSelectItemsAtIndexPaths indexPaths: Set<NSIndexPath>) {
         guard let indexPath = indexPaths.first else { return }
         let image = self.images[indexPath.item]
