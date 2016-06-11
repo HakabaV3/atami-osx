@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C8559FC066256B2FB440417 /* Pods_atami_osxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16C230D970EBABBCD7A8C8D /* Pods_atami_osxTests.framework */; };
+		7A8A795CDDF454E20B478100 /* Pods_atami_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE6A2509F24B5634647531D /* Pods_atami_osx.framework */; };
+		933243BF1D0C184C00EB84DC /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933243BE1D0C184C00EB84DC /* ImageRequest.swift */; };
+		933243C11D0C1B8E00EB84DC /* EntityEnpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933243C01D0C1B8E00EB84DC /* EntityEnpty.swift */; };
+		933243C51D0C288E00EB84DC /* NSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933243C41D0C288E00EB84DC /* NSImageView.swift */; };
+		9360DC4C1D0C0EFD0075C279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */; };
+		9360DC4E1D0C0EFD0075C279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC4D1D0C0EFD0075C279 /* ViewController.swift */; };
+		9360DC501D0C0EFD0075C279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9360DC4F1D0C0EFD0075C279 /* Assets.xcassets */; };
+		9360DC531D0C0EFD0075C279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9360DC511D0C0EFD0075C279 /* Main.storyboard */; };
+		9360DC5E1D0C0EFD0075C279 /* atami_osxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC5D1D0C0EFD0075C279 /* atami_osxTests.swift */; };
+		9360DC691D0C12980075C279 /* EntityImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC681D0C12980075C279 /* EntityImage.swift */; };
+		9360DC6B1D0C13940075C279 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360DC6A1D0C13940075C279 /* API.swift */; };
+		93EDF40C1D0C32CC004A3C8C /* ImageCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF40A1D0C32CC004A3C8C /* ImageCollectionItem.swift */; };
+		93EDF40D1D0C32CC004A3C8C /* ImageCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9360DC5A1D0C0EFD0075C279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9360DC401D0C0EFD0075C279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9360DC471D0C0EFD0075C279;
+			remoteInfo = "atami-osx";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		933243BE1D0C184C00EB84DC /* ImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		933243C01D0C1B8E00EB84DC /* EntityEnpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityEnpty.swift; sourceTree = "<group>"; };
+		933243C41D0C288E00EB84DC /* NSImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImageView.swift; sourceTree = "<group>"; };
+		9360DC481D0C0EFD0075C279 /* atami-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "atami-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9360DC4D1D0C0EFD0075C279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9360DC4F1D0C0EFD0075C279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9360DC521D0C0EFD0075C279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9360DC541D0C0EFD0075C279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9360DC591D0C0EFD0075C279 /* atami-osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "atami-osxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9360DC5D1D0C0EFD0075C279 /* atami_osxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atami_osxTests.swift; sourceTree = "<group>"; };
+		9360DC5F1D0C0EFD0075C279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9360DC681D0C12980075C279 /* EntityImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityImage.swift; sourceTree = "<group>"; };
+		9360DC6A1D0C13940075C279 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		93EDF40A1D0C32CC004A3C8C /* ImageCollectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionItem.swift; sourceTree = "<group>"; };
+		93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionItem.xib; sourceTree = "<group>"; };
+		BB8FB25140B73C11AFBD82AC /* Pods-atami-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osx.release.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osx/Pods-atami-osx.release.xcconfig"; sourceTree = "<group>"; };
+		C0BE08649EB555854A095630 /* Pods-atami-osxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osxTests/Pods-atami-osxTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDE6A2509F24B5634647531D /* Pods_atami_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atami_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DECA7C95AAE67F547E14439E /* Pods-atami-osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osx/Pods-atami-osx.debug.xcconfig"; sourceTree = "<group>"; };
+		F16C230D970EBABBCD7A8C8D /* Pods_atami_osxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atami_osxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CE788FAA840225787344BD /* Pods-atami-osxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osxTests/Pods-atami-osxTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9360DC451D0C0EFD0075C279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8A795CDDF454E20B478100 /* Pods_atami_osx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9360DC561D0C0EFD0075C279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8559FC066256B2FB440417 /* Pods_atami_osxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F2556CDE0C64401B64BFE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6A2509F24B5634647531D /* Pods_atami_osx.framework */,
+				F16C230D970EBABBCD7A8C8D /* Pods_atami_osxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EDB609FF2700941CE207F88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DECA7C95AAE67F547E14439E /* Pods-atami-osx.debug.xcconfig */,
+				BB8FB25140B73C11AFBD82AC /* Pods-atami-osx.release.xcconfig */,
+				F5CE788FAA840225787344BD /* Pods-atami-osxTests.debug.xcconfig */,
+				C0BE08649EB555854A095630 /* Pods-atami-osxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9360DC3F1D0C0EFD0075C279 = {
+			isa = PBXGroup;
+			children = (
+				9360DC4A1D0C0EFD0075C279 /* atami-osx */,
+				9360DC5C1D0C0EFD0075C279 /* atami-osxTests */,
+				9360DC491D0C0EFD0075C279 /* Products */,
+				5EDB609FF2700941CE207F88 /* Pods */,
+				18F2556CDE0C64401B64BFE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9360DC491D0C0EFD0075C279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9360DC481D0C0EFD0075C279 /* atami-osx.app */,
+				9360DC591D0C0EFD0075C279 /* atami-osxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9360DC4A1D0C0EFD0075C279 /* atami-osx */ = {
+			isa = PBXGroup;
+			children = (
+				9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */,
+				9360DC4D1D0C0EFD0075C279 /* ViewController.swift */,
+				9360DC681D0C12980075C279 /* EntityImage.swift */,
+				933243C01D0C1B8E00EB84DC /* EntityEnpty.swift */,
+				9360DC6A1D0C13940075C279 /* API.swift */,
+				933243BE1D0C184C00EB84DC /* ImageRequest.swift */,
+				933243C41D0C288E00EB84DC /* NSImageView.swift */,
+				93EDF40A1D0C32CC004A3C8C /* ImageCollectionItem.swift */,
+				93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */,
+				9360DC4F1D0C0EFD0075C279 /* Assets.xcassets */,
+				9360DC511D0C0EFD0075C279 /* Main.storyboard */,
+				9360DC541D0C0EFD0075C279 /* Info.plist */,
+			);
+			path = "atami-osx";
+			sourceTree = "<group>";
+		};
+		9360DC5C1D0C0EFD0075C279 /* atami-osxTests */ = {
+			isa = PBXGroup;
+			children = (
+				9360DC5D1D0C0EFD0075C279 /* atami_osxTests.swift */,
+				9360DC5F1D0C0EFD0075C279 /* Info.plist */,
+			);
+			path = "atami-osxTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9360DC471D0C0EFD0075C279 /* atami-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9360DC621D0C0EFD0075C279 /* Build configuration list for PBXNativeTarget "atami-osx" */;
+			buildPhases = (
+				3C1E07A84113E4C4BCD00EAF /* 📦 Check Pods Manifest.lock */,
+				9360DC441D0C0EFD0075C279 /* Sources */,
+				9360DC451D0C0EFD0075C279 /* Frameworks */,
+				9360DC461D0C0EFD0075C279 /* Resources */,
+				87B04CAFBCC94E50384B66ED /* 📦 Embed Pods Frameworks */,
+				04D0CD492CFFDC0C249CDE96 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "atami-osx";
+			productName = "atami-osx";
+			productReference = 9360DC481D0C0EFD0075C279 /* atami-osx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9360DC581D0C0EFD0075C279 /* atami-osxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9360DC651D0C0EFD0075C279 /* Build configuration list for PBXNativeTarget "atami-osxTests" */;
+			buildPhases = (
+				3BB7C4AD375C5CFA0DD089E5 /* 📦 Check Pods Manifest.lock */,
+				9360DC551D0C0EFD0075C279 /* Sources */,
+				9360DC561D0C0EFD0075C279 /* Frameworks */,
+				9360DC571D0C0EFD0075C279 /* Resources */,
+				5ED0A4E7EC928EF8445E8952 /* 📦 Embed Pods Frameworks */,
+				8EA9671B5A4A74D49CBBFEE6 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9360DC5B1D0C0EFD0075C279 /* PBXTargetDependency */,
+			);
+			name = "atami-osxTests";
+			productName = "atami-osxTests";
+			productReference = 9360DC591D0C0EFD0075C279 /* atami-osxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9360DC401D0C0EFD0075C279 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jin Sasaki";
+				TargetAttributes = {
+					9360DC471D0C0EFD0075C279 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9360DC581D0C0EFD0075C279 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9360DC471D0C0EFD0075C279;
+					};
+				};
+			};
+			buildConfigurationList = 9360DC431D0C0EFD0075C279 /* Build configuration list for PBXProject "atami-osx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9360DC3F1D0C0EFD0075C279;
+			productRefGroup = 9360DC491D0C0EFD0075C279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9360DC471D0C0EFD0075C279 /* atami-osx */,
+				9360DC581D0C0EFD0075C279 /* atami-osxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9360DC461D0C0EFD0075C279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EDF40D1D0C32CC004A3C8C /* ImageCollectionItem.xib in Resources */,
+				9360DC501D0C0EFD0075C279 /* Assets.xcassets in Resources */,
+				9360DC531D0C0EFD0075C279 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9360DC571D0C0EFD0075C279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D0CD492CFFDC0C249CDE96 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atami-osx/Pods-atami-osx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB7C4AD375C5CFA0DD089E5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C1E07A84113E4C4BCD00EAF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED0A4E7EC928EF8445E8952 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atami-osxTests/Pods-atami-osxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B04CAFBCC94E50384B66ED /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atami-osx/Pods-atami-osx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA9671B5A4A74D49CBBFEE6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atami-osxTests/Pods-atami-osxTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9360DC441D0C0EFD0075C279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9360DC4E1D0C0EFD0075C279 /* ViewController.swift in Sources */,
+				9360DC4C1D0C0EFD0075C279 /* AppDelegate.swift in Sources */,
+				93EDF40C1D0C32CC004A3C8C /* ImageCollectionItem.swift in Sources */,
+				9360DC6B1D0C13940075C279 /* API.swift in Sources */,
+				933243C51D0C288E00EB84DC /* NSImageView.swift in Sources */,
+				9360DC691D0C12980075C279 /* EntityImage.swift in Sources */,
+				933243BF1D0C184C00EB84DC /* ImageRequest.swift in Sources */,
+				933243C11D0C1B8E00EB84DC /* EntityEnpty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9360DC551D0C0EFD0075C279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9360DC5E1D0C0EFD0075C279 /* atami_osxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9360DC5B1D0C0EFD0075C279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9360DC471D0C0EFD0075C279 /* atami-osx */;
+			targetProxy = 9360DC5A1D0C0EFD0075C279 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9360DC511D0C0EFD0075C279 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9360DC521D0C0EFD0075C279 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9360DC601D0C0EFD0075C279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9360DC611D0C0EFD0075C279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9360DC631D0C0EFD0075C279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECA7C95AAE67F547E14439E /* Pods-atami-osx.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "atami-osx/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasakky.atami-osx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9360DC641D0C0EFD0075C279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB8FB25140B73C11AFBD82AC /* Pods-atami-osx.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "atami-osx/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasakky.atami-osx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9360DC661D0C0EFD0075C279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CE788FAA840225787344BD /* Pods-atami-osxTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "atami-osxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasakky.atami-osxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atami-osx.app/Contents/MacOS/atami-osx";
+			};
+			name = Debug;
+		};
+		9360DC671D0C0EFD0075C279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BE08649EB555854A095630 /* Pods-atami-osxTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "atami-osxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasakky.atami-osxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atami-osx.app/Contents/MacOS/atami-osx";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9360DC431D0C0EFD0075C279 /* Build configuration list for PBXProject "atami-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9360DC601D0C0EFD0075C279 /* Debug */,
+				9360DC611D0C0EFD0075C279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9360DC621D0C0EFD0075C279 /* Build configuration list for PBXNativeTarget "atami-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9360DC631D0C0EFD0075C279 /* Debug */,
+				9360DC641D0C0EFD0075C279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9360DC651D0C0EFD0075C279 /* Build configuration list for PBXNativeTarget "atami-osxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9360DC661D0C0EFD0075C279 /* Debug */,
+				9360DC671D0C0EFD0075C279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9360DC401D0C0EFD0075C279 /* Project object */;
+}
