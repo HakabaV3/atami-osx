@@ -882,11 +882,44 @@
         <!--Setting-->
         <scene sceneID="twn-Yi-ztP">
             <objects>
-                <viewController title="Setting" id="jkg-Vp-T73" sceneMemberID="viewController">
+                <viewController title="Setting" id="jkg-Vp-T73" customClass="SettingViewController" customModule="atami_osx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="WT9-Q3-zno">
                         <rect key="frame" x="0.0" y="0.0" width="733" height="361"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KP5-fo-1AA">
+                                <rect key="frame" x="14" y="273" width="122" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reset History" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MxJ-ul-gPt">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didClickResetHistory:" target="jkg-Vp-T73" id="23o-fK-L3j"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-ZN-Fvi">
+                                <rect key="frame" x="136" y="282" width="156" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="AuL-bh-n9p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="152" id="glh-kB-WJF"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0 history" id="Ofe-VJ-qe8">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="d7k-ZN-Fvi" firstAttribute="leading" secondItem="KP5-fo-1AA" secondAttribute="trailing" constant="8" id="AhS-W3-IUZ"/>
+                            <constraint firstItem="KP5-fo-1AA" firstAttribute="leading" secondItem="WT9-Q3-zno" secondAttribute="leading" constant="20" id="E1c-h9-bWg"/>
+                            <constraint firstItem="KP5-fo-1AA" firstAttribute="top" secondItem="WT9-Q3-zno" secondAttribute="top" constant="60" id="GDT-cE-ezQ"/>
+                            <constraint firstItem="d7k-ZN-Fvi" firstAttribute="centerY" secondItem="KP5-fo-1AA" secondAttribute="centerY" id="uem-BG-GIQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="historyTextField" destination="d7k-ZN-Fvi" id="HS0-u2-8r4"/>
+                    </connections>
                 </viewController>
                 <customObject id="Ffk-sO-0IR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
