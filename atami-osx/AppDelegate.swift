@@ -15,6 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+
+        NSUserDefaults.standardUserDefaults().setObject(nil, forKey: Const.HistoryKey)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -23,4 +25,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
-

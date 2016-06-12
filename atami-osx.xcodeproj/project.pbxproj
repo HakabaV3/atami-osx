@@ -22,6 +22,8 @@
 		93EDF40D1D0C32CC004A3C8C /* ImageCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */; };
 		93EDF40F1D0C6826004A3C8C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF40E1D0C6826004A3C8C /* SearchViewController.swift */; };
 		93EDF4121D0C6850004A3C8C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF4101D0C6850004A3C8C /* AddViewController.swift */; };
+		93EDF44D1D0D9BB5004A3C8C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF44B1D0D9BB5004A3C8C /* HistoryViewController.swift */; };
+		93EDF4501D0D9C62004A3C8C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EDF44F1D0D9C62004A3C8C /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		93EDF40B1D0C32CC004A3C8C /* ImageCollectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionItem.xib; sourceTree = "<group>"; };
 		93EDF40E1D0C6826004A3C8C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93EDF4101D0C6850004A3C8C /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		93EDF44B1D0D9BB5004A3C8C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		93EDF44F1D0D9C62004A3C8C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		BB8FB25140B73C11AFBD82AC /* Pods-atami-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osx.release.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osx/Pods-atami-osx.release.xcconfig"; sourceTree = "<group>"; };
 		C0BE08649EB555854A095630 /* Pods-atami-osxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-osxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-atami-osxTests/Pods-atami-osxTests.release.xcconfig"; sourceTree = "<group>"; };
 		CDE6A2509F24B5634647531D /* Pods_atami_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atami_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 				9360DC4B1D0C0EFD0075C279 /* AppDelegate.swift */,
 				93EDF40E1D0C6826004A3C8C /* SearchViewController.swift */,
 				93EDF4101D0C6850004A3C8C /* AddViewController.swift */,
+				93EDF44B1D0D9BB5004A3C8C /* HistoryViewController.swift */,
+				93EDF44F1D0D9C62004A3C8C /* Const.swift */,
 				9360DC681D0C12980075C279 /* EntityImage.swift */,
 				933243C01D0C1B8E00EB84DC /* EntityEnpty.swift */,
 				9360DC6A1D0C13940075C279 /* API.swift */,
@@ -352,12 +358,14 @@
 				9360DC4C1D0C0EFD0075C279 /* AppDelegate.swift in Sources */,
 				93EDF40C1D0C32CC004A3C8C /* ImageCollectionItem.swift in Sources */,
 				93EDF4121D0C6850004A3C8C /* AddViewController.swift in Sources */,
+				93EDF44D1D0D9BB5004A3C8C /* HistoryViewController.swift in Sources */,
 				93EDF40F1D0C6826004A3C8C /* SearchViewController.swift in Sources */,
 				9360DC6B1D0C13940075C279 /* API.swift in Sources */,
 				933243C51D0C288E00EB84DC /* NSImageView.swift in Sources */,
 				9360DC691D0C12980075C279 /* EntityImage.swift in Sources */,
 				933243BF1D0C184C00EB84DC /* ImageRequest.swift in Sources */,
 				933243C11D0C1B8E00EB84DC /* EntityEnpty.swift in Sources */,
+				93EDF4501D0D9C62004A3C8C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

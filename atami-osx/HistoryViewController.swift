@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  HistoryViewController.swift
 //  atami-osx
 //
 //  Created by Jin Sasaki on 2016/06/12.
@@ -12,10 +12,9 @@ import RxSwift
 import RxCocoa
 import AlamofireImage
 
-class SearchViewController: NSViewController {
+class HistoryViewController: NSViewController {
 
     @IBOutlet weak var collectionView: NSCollectionView!
-    @IBOutlet weak var keywordField: NSTextField!
 
     private let disposeBag = DisposeBag()
     private var images: [EntityImage] = []
@@ -27,31 +26,15 @@ class SearchViewController: NSViewController {
         self.collectionView.dataSource = self
 
         self.collectionView.registerNib(NSNib(nibNamed: "ImageCollectionItem", bundle: NSBundle.mainBundle())!, forItemWithIdentifier: "ImageCollectionItem")
+    }
 
-        self.keywordField.rx_text
-            .debounce(0.5, scheduler: MainScheduler.instance)
-            .distinctUntilChanged()
-            .map({ (text) -> Observable<[EntityImage]> in
-                if text.characters.count == 0 {
-                    return Observable.just([])
-                }
-                print("search: \(text)")
-                return API.search(keyword: text)
-            })
-            .switchLatest()
-            .observeOn(MainScheduler.asyncInstance)
-            .subscribe(
-                onNext: { [weak self] (images) in
-                    print("result: \(images)")
-                    self?.images = images
-                    self?.collectionView.reloadData()
-                },
-                onError: { (error) in
-                    print(error)
-                },
-                onCompleted: nil,
-                onDisposed: nil)
-            .addDisposableTo(self.disposeBag)
+    override func viewWillAppear() {
+        super.viewWillAppear()
+
+        if let images = NSUserDefaults.standardUserDefaults().arrayForKey(Const.HistoryKey) as? [[String: String]] {
+            self.images = images.map({ EntityImage.fromDictionary($0) })
+            self.collectionView.reloadData()
+        }
     }
 
     override var representedObject: AnyObject? {
@@ -61,7 +44,7 @@ class SearchViewController: NSViewController {
     }
 }
 
-extension SearchViewController: NSCollectionViewDataSource {
+extension HistoryViewController: NSCollectionViewDataSource {
     func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.images.count
     }
@@ -76,7 +59,7 @@ extension SearchViewController: NSCollectionViewDataSource {
     }
 }
 
-extension SearchViewController: NSCollectionViewDelegate {
+extension HistoryViewController: NSCollectionViewDelegate {
     func collectionView(collectionView: NSCollectionView, didSelectItemsAtIndexPaths indexPaths: Set<NSIndexPath>) {
         guard let indexPath = indexPaths.first else { return }
         let image = self.images[indexPath.item]
@@ -85,9 +68,12 @@ extension SearchViewController: NSCollectionViewDelegate {
         pasteBoard.setString(image.proxiedUrl, forType: NSStringPboardType)
 
         // Save history
-        var images = NSUserDefaults.standardUserDefaults().arrayForKey(Const.HistoryKey) as? [[String: String]] ?? []
-        images.insert(image.toDictionary(), atIndex: 0)
-        NSUserDefaults.standardUserDefaults().setObject(images, forKey: Const.HistoryKey)
-        NSUserDefaults.standardUserDefaults().synchronize()
+        if var images = NSUserDefaults.standardUserDefaults().arrayForKey(Const.HistoryKey) as? [[String: String]] {
+            images.insert(image.toDictionary(), atIndex: 0)
+            NSUserDefaults.standardUserDefaults().setObject(images, forKey: Const.HistoryKey)
+            NSUserDefaults.standardUserDefaults().synchronize()
+
+            self.collectionView.reloadData()
+        }
     }
 }

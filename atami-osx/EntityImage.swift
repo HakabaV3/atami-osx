@@ -14,6 +14,24 @@ struct EntityImage {
     let tags: [String]
     let originalUrl: String
     let proxiedUrl: String
+
+    func toDictionary() -> [String: String] {
+        return [
+            "id": id,
+            "tags": tags.joinWithSeparator(","),
+            "originalUrl": originalUrl,
+            "proxiedUrl": proxiedUrl
+        ]
+    }
+
+    static func fromDictionary(dict: [String: String]) -> EntityImage {
+        return EntityImage(
+            id: dict["id"] ?? "",
+            tags: dict["tags"]?.componentsSeparatedByString(",") ?? [],
+            originalUrl: dict["originalUrl"] ?? "",
+            proxiedUrl: dict["proxiedUrl"] ?? ""
+        )
+    }
 }
 
 extension EntityImage: Decodable {
